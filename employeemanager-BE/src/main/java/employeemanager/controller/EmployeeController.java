@@ -1,19 +1,20 @@
-package tech.getarrays.employeemanager.resource;
+package employeemanager.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import tech.getarrays.employeemanager.model.Employee;
-import tech.getarrays.employeemanager.service.EmployeeService;
+
+import employeemanager.model.Employee;
+import employeemanager.service.EmployeeService;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/employee")
-public class EmployeeResource {
+public class EmployeeController {
     private final EmployeeService employeeService;
 
-    public EmployeeResource(EmployeeService employeeService) {
+    public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
 

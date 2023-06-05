@@ -90,8 +90,9 @@ export class AppComponent implements OnInit {
         results.push(employee);
       }
     }
-    /*this.employees = results; if (results.length === 0 || !key)  this condition is changed because in case of 
-    no employes with search condition then it is desplaying all employes it should Not.*/
+    this.employees = results;
+    /*  if (results.length === 0 || !key) 
+     }this condition is changed because in case of no employes with search condition then it is desplaying all employes it should Not.*/
     
     if (!key) {
       this.getEmployees();
